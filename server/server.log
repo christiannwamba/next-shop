@@ -1,0 +1,879 @@
+2018-01-04T21:23:54.317Z 2687ms FAILURE {
+  "error": "The resolver function `authenticate` is not nullable, but the function returned null."
+}
+2018-01-04T21:25:00.090Z 1593ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "NvKOLIXA8iiObMFlS9DC7cbQ1dZqAhtC"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDE0MDAsImlhdCI6MTUxNTEwMTEwMCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTAycXQ2aTRjczAxMjFvenVyYWQ0MyJ9.baDDNOdIgUFChUk_EzNp559On7g9PGNmKgTU3a89Xts",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDE0MDAsImlhdCI6MTUxNTEwMTEwMCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTAycXQ2aTRjczAxMjFvenVyYWQ0MyJ9.baDDNOdIgUFChUk_EzNp559On7g9PGNmKgTU3a89Xts",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:25:01.661Z": "Error: Unable to retrieve key identifier from token\n    at /var/task/src/auth0/auth0Authentication.js:49:19\n    at verifyToken (/var/task/src/auth0/auth0Authentication.js:45:12)\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:104:38)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at /var/task/src/auth0/auth0Authentication.js:7:71\n    at __awaiter (/var/task/src/auth0/auth0Authentication.js:3:12)\n    at exports.default (/var/task/src/auth0/auth0Authentication.js:94:45)\n    at executeFunction (/var/task/src/auth0/auth0Authentication-lambda.js:12:19)\n    at exports.handle (/var/task/src/auth0/auth0Authentication-lambda.js:7:3)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T21:25:21.389Z 72ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "NvKOLIXA8iiObMFlS9DC7cbQ1dZqAhtC"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDE0MjEsImlhdCI6MTUxNTEwMTEyMSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTAzNzhzbDA3bDAxOTZ1cm1yazhkOCJ9.-TRrTE6NHwbfj9thxVqOl4RfUw0pzjMOm2hQGaY3lhk",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDE0MjEsImlhdCI6MTUxNTEwMTEyMSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTAzNzhzbDA3bDAxOTZ1cm1yazhkOCJ9.-TRrTE6NHwbfj9thxVqOl4RfUw0pzjMOm2hQGaY3lhk",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:25:21.463Z": "Error: Unable to retrieve key identifier from token\n    at /var/task/src/auth0/auth0Authentication.js:49:19\n    at verifyToken (/var/task/src/auth0/auth0Authentication.js:45:12)\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:104:38)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at /var/task/src/auth0/auth0Authentication.js:7:71\n    at __awaiter (/var/task/src/auth0/auth0Authentication.js:3:12)\n    at exports.default (/var/task/src/auth0/auth0Authentication.js:94:45)\n    at executeFunction (/var/task/src/auth0/auth0Authentication-lambda.js:12:19)\n    at exports.handle (/var/task/src/auth0/auth0Authentication-lambda.js:7:3)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T21:36:08.026Z 2037ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "NvKOLIXA8iiObMFlS9DC7cbQ1dZqAhtC"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDIwNjgsImlhdCI6MTUxNTEwMTc2OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTBoMjZ5MnY0cDAxNTMxaTk2YW5tOCJ9.8_7JKbbLF4mRQL1HtYE60Ij0DGRtMrCoS6PwVnXJ114",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDIwNjgsImlhdCI6MTUxNTEwMTc2OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTBoMjZ5MnY0cDAxNTMxaTk2YW5tOCJ9.8_7JKbbLF4mRQL1HtYE60Ij0DGRtMrCoS6PwVnXJ114",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:36:10.046Z": "Error: Unable to retrieve key identifier from token\n    at /var/task/src/auth0/auth0Authentication.js:49:19\n    at verifyToken (/var/task/src/auth0/auth0Authentication.js:45:12)\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:104:38)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at /var/task/src/auth0/auth0Authentication.js:7:71\n    at __awaiter (/var/task/src/auth0/auth0Authentication.js:3:12)\n    at exports.default (/var/task/src/auth0/auth0Authentication.js:94:45)\n    at executeFunction (/var/task/src/auth0/auth0Authentication-lambda.js:12:19)\n    at exports.handle (/var/task/src/auth0/auth0Authentication-lambda.js:7:3)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T21:36:23.659Z 782ms FAILURE {
+  "error": "The resolver function `authenticate` is not nullable, but the function returned null."
+}
+2018-01-04T21:39:03.916Z 2921ms FAILURE {
+  "error": "The resolver function `authenticate` is not nullable, but the function returned null."
+}
+2018-01-04T21:41:21.835Z 2978ms FAILURE {
+  "error": "The resolver function `authenticate` is not nullable, but the function returned null."
+}
+2018-01-04T21:44:39.218Z 2597ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDI1NzksImlhdCI6MTUxNTEwMjI3OSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTBzMG1xOWxsajAxOTdzNHlmYmZ1ZCJ9.UYTvnI5CwCjGMX_kL30-IxQIgR_XIRemAR3GtqvhcTg",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDI1NzksImlhdCI6MTUxNTEwMjI3OSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTBzMG1xOWxsajAxOTdzNHlmYmZ1ZCJ9.UYTvnI5CwCjGMX_kL30-IxQIgR_XIRemAR3GtqvhcTg",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:44:41.018Z": "Starting..."
+    },
+    {
+      "2018-01-04T21:44:41.018Z": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    {
+      "2018-01-04T21:44:41.762Z": "Error: JsonWebTokenError: jwt audience invalid. expected: http://localhost:3000\n    at /var/task/src/auth0/auth0Authentication.js:71:27\n    at Object.module.exports [as verify] (/var/task/node_modules/jsonwebtoken/verify.js:141:14)\n    at /var/task/src/auth0/auth0Authentication.js:64:17\n    at /var/task/node_modules/lru-memoizer/index.js:81:20\n    at Array.forEach (native)\n    at /var/task/node_modules/lru-memoizer/index.js:77:17\n    at /var/task/node_modules/jwks-rsa/lib/wrappers/cache.js:26:16\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:58:18\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:126:16\n    at Request._callback (/var/task/node_modules/jwks-rsa/lib/JwksClient.js:94:16)\nRequestId: 7706b2f6-f198-11e7-93d6-67547f619b35 Process exited before completing request"
+    }
+  ],
+  "returnValue": {
+    "errorMessage": "RequestId: 7706b2f6-f198-11e7-93d6-67547f619b35 Process exited before completing request"
+  }
+}
+2018-01-04T21:52:03.426Z 351ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwMjMsImlhdCI6MTUxNTEwMjcyMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTExamR1ZzFyMTAxNzM3YnNweDUzdCJ9.9JcHlS7tSBNfTEaOUcLEHhf4O6S_lwxPwTLxqZI5GBk",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwMjMsImlhdCI6MTUxNTEwMjcyMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTExamR1ZzFyMTAxNzM3YnNweDUzdCJ9.9JcHlS7tSBNfTEaOUcLEHhf4O6S_lwxPwTLxqZI5GBk",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:52:03.725Z": "{ data: { accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ' },\n  context: \n   { request: { sourceIp: '41.190.31.246', headers: {}, httpMethod: 'post' },\n     auth: null,\n     sessionCache: {},\n     environment: {},\n     graphcool: \n      { rootToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwMjMsImlhdCI6MTUxNTEwMjcyMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTExamR1ZzFyMTAxNzM3YnNweDUzdCJ9.9JcHlS7tSBNfTEaOUcLEHhf4O6S_lwxPwTLxqZI5GBk',\n        endpoints: [Object],\n        projectId: 'cjbybqj371erj0126784988vd',\n        alias: null,\n        pat: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwMjMsImlhdCI6MTUxNTEwMjcyMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTExamR1ZzFyMTAxNzM3YnNweDUzdCJ9.9JcHlS7tSBNfTEaOUcLEHhf4O6S_lwxPwTLxqZI5GBk',\n        serviceId: 'cjbybqj371erj0126784988vd' } } }"
+    }
+  ],
+  "returnValue": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+  }
+}
+2018-01-04T21:52:38.306Z 34ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwNTgsImlhdCI6MTUxNTEwMjc1OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTEyYWFxM293MDAxNTNyYzVqYXR5eCJ9.ChhMRj7xk64Q0CKx5Y5_-GNx9JbaaZvHC-fY4VYykMI",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwNTgsImlhdCI6MTUxNTEwMjc1OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTEyYWFxM293MDAxNTNyYzVqYXR5eCJ9.ChhMRj7xk64Q0CKx5Y5_-GNx9JbaaZvHC-fY4VYykMI",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:52:38.328Z": "{ data: { accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ' },\n  context: \n   { request: { sourceIp: '41.190.31.246', headers: {}, httpMethod: 'post' },\n     auth: null,\n     sessionCache: {},\n     environment: {},\n     graphcool: \n      { rootToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwNTgsImlhdCI6MTUxNTEwMjc1OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTEyYWFxM293MDAxNTNyYzVqYXR5eCJ9.ChhMRj7xk64Q0CKx5Y5_-GNx9JbaaZvHC-fY4VYykMI',\n        endpoints: [Object],\n        projectId: 'cjbybqj371erj0126784988vd',\n        alias: null,\n        pat: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDMwNTgsImlhdCI6MTUxNTEwMjc1OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTEyYWFxM293MDAxNTNyYzVqYXR5eCJ9.ChhMRj7xk64Q0CKx5Y5_-GNx9JbaaZvHC-fY4VYykMI',\n        serviceId: 'cjbybqj371erj0126784988vd' } } }"
+    }
+  ],
+  "returnValue": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+  }
+}
+2018-01-04T21:58:29.208Z 334ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0MDksImlhdCI6MTUxNTEwMzEwOSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTE5dDIwYThwZjAxOTdmaWc4emxnNSJ9.a2EFAvY_PHk0x-x_z4dLyl6f9h3U_--5v9qouz0xtX8",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0MDksImlhdCI6MTUxNTEwMzEwOSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTE5dDIwYThwZjAxOTdmaWc4emxnNSJ9.a2EFAvY_PHk0x-x_z4dLyl6f9h3U_--5v9qouz0xtX8",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:58:29.512Z": "{ data: { accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ' },\n  context: \n   { request: { sourceIp: '41.190.31.246', headers: {}, httpMethod: 'post' },\n     auth: null,\n     sessionCache: {},\n     environment: {},\n     graphcool: \n      { rootToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0MDksImlhdCI6MTUxNTEwMzEwOSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTE5dDIwYThwZjAxOTdmaWc4emxnNSJ9.a2EFAvY_PHk0x-x_z4dLyl6f9h3U_--5v9qouz0xtX8',\n        endpoints: [Object],\n        projectId: 'cjbybqj371erj0126784988vd',\n        alias: null,\n        pat: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0MDksImlhdCI6MTUxNTEwMzEwOSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTE5dDIwYThwZjAxOTdmaWc4emxnNSJ9.a2EFAvY_PHk0x-x_z4dLyl6f9h3U_--5v9qouz0xtX8',\n        serviceId: 'cjbybqj371erj0126784988vd' } } }"
+    }
+  ],
+  "returnValue": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ",
+    "id": "1"
+  }
+}
+2018-01-04T21:59:46.918Z 445ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0ODYsImlhdCI6MTUxNTEwMzE4NiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFiaDBtNDA5MTAxNTM1Y2N2NzE1ciJ9.-San4Lwr5M1GZC_MzxOJnEZ6SuBovVPWUkGYBoAJBVs",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0ODYsImlhdCI6MTUxNTEwMzE4NiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFiaDBtNDA5MTAxNTM1Y2N2NzE1ciJ9.-San4Lwr5M1GZC_MzxOJnEZ6SuBovVPWUkGYBoAJBVs",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T21:59:47.301Z": "{ data: { accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ' },\n  context: \n   { request: { sourceIp: '41.190.31.246', headers: {}, httpMethod: 'post' },\n     auth: null,\n     sessionCache: {},\n     environment: {},\n     graphcool: \n      { rootToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0ODYsImlhdCI6MTUxNTEwMzE4NiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFiaDBtNDA5MTAxNTM1Y2N2NzE1ciJ9.-San4Lwr5M1GZC_MzxOJnEZ6SuBovVPWUkGYBoAJBVs',\n        endpoints: [Object],\n        projectId: 'cjbybqj371erj0126784988vd',\n        alias: null,\n        pat: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM0ODYsImlhdCI6MTUxNTEwMzE4NiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFiaDBtNDA5MTAxNTM1Y2N2NzE1ciJ9.-San4Lwr5M1GZC_MzxOJnEZ6SuBovVPWUkGYBoAJBVs',\n        serviceId: 'cjbybqj371erj0126784988vd' } } }"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ",
+      "id": "1"
+    }
+  }
+}
+2018-01-04T22:02:23.738Z 336ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM2NDMsImlhdCI6MTUxNTEwMzM0MywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFldTBxYWZkbDAxOTdzODh4eTY0ZyJ9.ttwjsnFLYxa_V1oMHTs73UL8KFH2wciF0dI-q--D0T4",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDM2NDMsImlhdCI6MTUxNTEwMzM0MywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFldTBxYWZkbDAxOTdzODh4eTY0ZyJ9.ttwjsnFLYxa_V1oMHTs73UL8KFH2wciF0dI-q--D0T4",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:02:24.044Z": "event"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ",
+      "id": "1"
+    }
+  }
+}
+2018-01-04T22:10:01.936Z 3240ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQxMDEsImlhdCI6MTUxNTEwMzgwMSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFvbmtnZ3ZhdTAxNzN3YXgycGkyMyJ9.xN4O3Cu96eOB1Nf1MmFlWnqqG7LifVPAagxHyFxMGpg",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQxMDEsImlhdCI6MTUxNTEwMzgwMSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTFvbmtnZ3ZhdTAxNzN3YXgycGkyMyJ9.xN4O3Cu96eOB1Nf1MmFlWnqqG7LifVPAagxHyFxMGpg",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:10:04.243Z": "Starting..."
+    },
+    {
+      "2018-01-04T22:10:04.244Z": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    {
+      "2018-01-04T22:10:05.085Z": "Error: JsonWebTokenError: jwt audience invalid. expected: http://localhost:3000\n    at /var/task/src/auth0/auth0Authentication.js:71:27\n    at Object.module.exports [as verify] (/var/task/node_modules/jsonwebtoken/verify.js:141:14)\n    at /var/task/src/auth0/auth0Authentication.js:64:17\n    at /var/task/node_modules/lru-memoizer/index.js:81:20\n    at Array.forEach (native)\n    at /var/task/node_modules/lru-memoizer/index.js:77:17\n    at /var/task/node_modules/jwks-rsa/lib/wrappers/cache.js:26:16\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:58:18\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:126:16\n    at Request._callback (/var/task/node_modules/jwks-rsa/lib/JwksClient.js:94:16)\nRequestId: 02b7eda7-f19c-11e7-b9dc-39da6f6e494b Process exited before completing request"
+    }
+  ],
+  "returnValue": {
+    "errorMessage": "RequestId: 02b7eda7-f19c-11e7-b9dc-39da6f6e494b Process exited before completing request"
+  }
+}
+2018-01-04T22:21:25.650Z 2831ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQ3ODUsImlhdCI6MTUxNTEwNDQ4NSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTIzYjRpYmFoMTAxOTcweW9wZWh5MyJ9.IRuxpomjYjjGOI0vPjr_wsqxFvfDd-nNpJBpMa0eEtc",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQ3ODUsImlhdCI6MTUxNTEwNDQ4NSwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTIzYjRpYmFoMTAxOTcweW9wZWh5MyJ9.IRuxpomjYjjGOI0vPjr_wsqxFvfDd-nNpJBpMa0eEtc",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:21:27.667Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:21:27.669Z": "chris92.auth0.com http://localhost:3000"
+    },
+    {
+      "2018-01-04T22:21:27.705Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ'"
+    },
+    {
+      "2018-01-04T22:21:28.432Z": "Error: JsonWebTokenError: jwt audience invalid. expected: http://localhost:3000\n    at /var/task/src/auth0/auth0Authentication.js:71:27\n    at Object.module.exports [as verify] (/var/task/node_modules/jsonwebtoken/verify.js:141:14)\n    at /var/task/src/auth0/auth0Authentication.js:64:17\n    at /var/task/node_modules/lru-memoizer/index.js:81:20\n    at Array.forEach (native)\n    at /var/task/node_modules/lru-memoizer/index.js:77:17\n    at /var/task/node_modules/jwks-rsa/lib/wrappers/cache.js:26:16\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:58:18\n    at /var/task/node_modules/jwks-rsa/lib/JwksClient.js:126:16\n    at Request._callback (/var/task/node_modules/jwks-rsa/lib/JwksClient.js:94:16)\nRequestId: 9a28bd74-f19d-11e7-91c3-5b6508dc0c5e Process exited before completing request"
+    }
+  ],
+  "returnValue": {
+    "errorMessage": "RequestId: 9a28bd74-f19d-11e7-91c3-5b6508dc0c5e Process exited before completing request"
+  }
+}
+2018-01-04T22:24:38.278Z 2952ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQ5NzgsImlhdCI6MTUxNTEwNDY3OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTI3ZnJhaGl2cTAxNzNpNDFpNWlhZSJ9.W2rA33QqX2nd3tUOVCS4E5n-aH5ySjt5Zgf0t8DcXJQ",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDQ5NzgsImlhdCI6MTUxNTEwNDY3OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTI3ZnJhaGl2cTAxNzNpNDFpNWlhZSJ9.W2rA33QqX2nd3tUOVCS4E5n-aH5ySjt5Zgf0t8DcXJQ",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:24:40.290Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:24:40.309Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjE6MjI6NDcuNDQwWiIsImlzcyI6Imh0dHBzOi8vY2hyaXM5Mi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc1OTBlZTQyZWQwYzZlNjFiNzcwMjE5IiwiYXVkIjoiNU5TQVpZS2laWVJSclB2VDBUMHY2UGRqeXhNM3JoWEYiLCJpYXQiOjE1MTUxMDA5NjcsImV4cCI6MTUxNTEzNjk2NywiYXRfaGFzaCI6InFUd2p4SWpfZ3pKZXRWQTdWcW9xeVEiLCJub25jZSI6IkpSUUw1RXpQaE5DcjJPZ1llYWhWYlo2YTZVYVhHc0N2In0.yDKXIcWxvjB6XMjeO3arnVeRKeU1NoAw5iLAQdpMDTzmdQPmnxd0AQjXEydkS3xJMfCIXFNb6p4SnOP3LKv91tJeB0ep6PT4GCd0ytAIRhsYoqwljaCtkJmn3iJ6pWI053bsEpAGxtCRX8MgJ16i6J_VKKLxK3Ba66aYxXbghDiBSLVUw_wCTJnLvXVx6Kvy0D281iuboj8F8a6Qemp-YeDygbDEDfIthskQvdXRnkpa5SmcdcxWDt5zCKLze1EWuc1T7kDkvOiHRLCQvMOCbNhbpQ8CUytDV8oPiSjpTgb_gpSZeLlDO4Pm8xY5QKjKckiRJT9mV-ymVU7YYJ28zQ'"
+    },
+    {
+      "2018-01-04T22:24:41.114Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T21:22:47.440Z',\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515100967,\n  exp: 1515136967,\n  at_hash: 'qTwjxIj_gzJetVA7VqoqyQ',\n  nonce: 'JRQL5EzPhNCr2OgYeahVbZ6a6UaXGsCv' }"
+    },
+    {
+      "2018-01-04T22:24:41.219Z": "5 null"
+    },
+    {
+      "2018-01-04T22:24:41.220Z": "9 TypeError: Cannot read property 'includes' of undefined\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:126:40)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at fulfilled (/var/task/src/auth0/auth0Authentication.js:4:58)\n    at process._tickDomainCallback (internal/process/next_tick.js:135:7)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T22:31:43.979Z 2612ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU0MDMsImlhdCI6MTUxNTEwNTEwMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJnazhiYnJ3bDAxOTd5YWh5ZGExdyJ9.Xfj5VfOsO1Sg8gyanqaELm67I7BPUzm7aH7Fj_B6_r4",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU0MDMsImlhdCI6MTUxNTEwNTEwMywiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJnazhiYnJ3bDAxOTd5YWh5ZGExdyJ9.Xfj5VfOsO1Sg8gyanqaELm67I7BPUzm7aH7Fj_B6_r4",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:31:45.717Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:31:45.719Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ'"
+    },
+    {
+      "2018-01-04T22:31:46.497Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:30:37.459Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515105041,\n  exp: 1515141041,\n  at_hash: 'ZhOfKCDDtTRY_w5PU3dM7A',\n  nonce: 'xQG9dJdtrC7xgfT0_D5prd.kD~hx0uxv' }"
+    },
+    {
+      "2018-01-04T22:31:46.593Z": "5 null"
+    },
+    {
+      "2018-01-04T22:31:46.593Z": "9 TypeError: Cannot read property 'includes' of undefined\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:126:40)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at fulfilled (/var/task/src/auth0/auth0Authentication.js:4:58)\n    at process._tickDomainCallback (internal/process/next_tick.js:135:7)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T22:34:38.338Z 3757ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU1NzgsImlhdCI6MTUxNTEwNTI3OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJrYXJtaHpzZTAxNzNnaWhqdjN5OSJ9.jUUPoSEpVxSszqCGhSZAEBS8iEmhb2zQDgxrvzot2Ps",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU1NzgsImlhdCI6MTUxNTEwNTI3OCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJrYXJtaHpzZTAxNzNnaWhqdjN5OSJ9.jUUPoSEpVxSszqCGhSZAEBS8iEmhb2zQDgxrvzot2Ps",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:34:40.461Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:34:40.463Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ'"
+    },
+    {
+      "2018-01-04T22:34:41.266Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:30:37.459Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515105041,\n  exp: 1515141041,\n  at_hash: 'ZhOfKCDDtTRY_w5PU3dM7A',\n  nonce: 'xQG9dJdtrC7xgfT0_D5prd.kD~hx0uxv' }"
+    },
+    {
+      "2018-01-04T22:34:41.380Z": "5 null"
+    },
+    {
+      "2018-01-04T22:34:41.955Z": "6 undefined"
+    },
+    {
+      "2018-01-04T22:34:42.031Z": "7 { id: 'cjc12kdlqoair0196b025cmsq' }"
+    },
+    {
+      "2018-01-04T22:34:42.088Z": "8 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDYzMjMsImlhdCI6MTUxNTEwNTI4MiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEya2RscW9haXIwMTk2YjAyNWNtc3EiLCJtb2RlbE5hbWUiOiJVc2VyIn0.5naDo2UTHTNa-8uGsDYB1FLp1l3qy9XuokfvQjoTQI4'"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "id": "cjc12kdlqoair0196b025cmsq",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDYzMjMsImlhdCI6MTUxNTEwNTI4MiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEya2RscW9haXIwMTk2YjAyNWNtc3EiLCJtb2RlbE5hbWUiOiJVc2VyIn0.5naDo2UTHTNa-8uGsDYB1FLp1l3qy9XuokfvQjoTQI4"
+    }
+  }
+}
+2018-01-04T22:38:36.102Z 32ms FAILURE {
+  "event": {
+    "data": {
+      "accessToken": "Yehn7xrbGqbLPVVF-jkTFjjXrzdT6twH"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU4MTYsImlhdCI6MTUxNTEwNTUxNiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJwZTg2YzVpYTAxOTdlcjl0ZjVjYiJ9.UBR0f9n3chqDx5oR68bPbRzN7kRdGRplWVFi5mK-KKE",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU4MTYsImlhdCI6MTUxNTEwNTUxNiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJwZTg2YzVpYTAxOTdlcjl0ZjVjYiJ9.UBR0f9n3chqDx5oR68bPbRzN7kRdGRplWVFi5mK-KKE",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:38:36.125Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:38:36.125Z": "3 'Yehn7xrbGqbLPVVF-jkTFjjXrzdT6twH'"
+    },
+    {
+      "2018-01-04T22:38:36.127Z": "9 Error: Unable to retrieve key identifier from token\n    at /var/task/src/auth0/auth0Authentication.js:49:19\n    at verifyToken (/var/task/src/auth0/auth0Authentication.js:45:12)\n    at Object.<anonymous> (/var/task/src/auth0/auth0Authentication.js:114:38)\n    at step (/var/task/src/auth0/auth0Authentication.js:32:23)\n    at Object.next (/var/task/src/auth0/auth0Authentication.js:13:53)\n    at /var/task/src/auth0/auth0Authentication.js:7:71\n    at __awaiter (/var/task/src/auth0/auth0Authentication.js:3:12)\n    at exports.default (/var/task/src/auth0/auth0Authentication.js:99:45)\n    at executeFunction (/var/task/src/auth0/auth0Authentication-lambda.js:12:19)\n    at exports.handle (/var/task/src/auth0/auth0Authentication-lambda.js:7:3)"
+    }
+  ],
+  "returnValue": {
+    "error": "An unexpected error occured"
+  }
+}
+2018-01-04T22:41:20.790Z 3002ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU5ODAsImlhdCI6MTUxNTEwNTY4MCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJzeGF1bHNoOTAxMjFibXp1eTgxOSJ9.X946YpCz8KpDHCupHoJlfFO_XvWdcpRFWW-uefm4RQo",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDU5ODAsImlhdCI6MTUxNTEwNTY4MCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJzeGF1bHNoOTAxMjFibXp1eTgxOSJ9.X946YpCz8KpDHCupHoJlfFO_XvWdcpRFWW-uefm4RQo",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:41:22.783Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:41:22.801Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ'"
+    },
+    {
+      "2018-01-04T22:41:23.621Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:30:37.459Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515105041,\n  exp: 1515141041,\n  at_hash: 'ZhOfKCDDtTRY_w5PU3dM7A',\n  nonce: 'xQG9dJdtrC7xgfT0_D5prd.kD~hx0uxv' }"
+    },
+    {
+      "2018-01-04T22:41:23.738Z": "5 { id: 'cjc12kdlqoair0196b025cmsq' }"
+    },
+    {
+      "2018-01-04T22:41:23.804Z": "8 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDY3MjQsImlhdCI6MTUxNTEwNTY4MywicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEya2RscW9haXIwMTk2YjAyNWNtc3EiLCJtb2RlbE5hbWUiOiJVc2VyIn0.3S_FaHanWMBuDMf7n6izNvpIJo6JXVk7ctH1JtwW8tE'"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "id": "cjc12kdlqoair0196b025cmsq",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDY3MjQsImlhdCI6MTUxNTEwNTY4MywicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEya2RscW9haXIwMTk2YjAyNWNtc3EiLCJtb2RlbE5hbWUiOiJVc2VyIn0.3S_FaHanWMBuDMf7n6izNvpIJo6JXVk7ctH1JtwW8tE"
+    }
+  }
+}
+2018-01-04T22:41:44.578Z 765ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDYwMDQsImlhdCI6MTUxNTEwNTcwNCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJ0Zm5sbHQwZDAxMjExaHhjZDYyeCJ9.LsbGVpMQdA9f9Swp-G1RKZk9C4ZqRDDp1cmM-HOXdok",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDYwMDQsImlhdCI6MTUxNTEwNTcwNCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJ0Zm5sbHQwZDAxMjExaHhjZDYyeCJ9.LsbGVpMQdA9f9Swp-G1RKZk9C4ZqRDDp1cmM-HOXdok",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:41:44.622Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:41:44.622Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6MzA6MzcuNDU5WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTA0MSwiZXhwIjoxNTE1MTQxMDQxLCJhdF9oYXNoIjoiWmhPZktDRER0VFJZX3c1UFUzZE03QSIsIm5vbmNlIjoieFFHOWRKZHRyQzd4Z2ZUMF9ENXByZC5rRH5oeDB1eHYifQ.fHOz2zrWg1Da1okV5s_l-y1mLn_FIg_H3Qds-IkxQ9AVSZ8bc1FS8jW1TxV3l0-zUwdNH7wGmqfegcqXHqWWBecvpt0KPMH6kBRc7vAz8EvJrvZADjOGJ19BP97KZASensez1Sr4K5fZh8S2X7EEz7mZL27UCCIgyW889nAA4e0_fu8_bf3TVpVbvn3brpfwUH4YnYwkrqmd5XCg3sLpj5FA7NuOhK6gOjDziqWtiRNPsZVxL5Mg5h5b5ymCtauxx2lIRb7a6w7qCVTWPW1orXGQu4aC-Z8be-s-2pdL4ktQnwMjE5DLwNmjmQ_Yjxwg-fqnYjXHG-E9B9f1qcR6UQ'"
+    },
+    {
+      "2018-01-04T22:41:45.225Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:30:37.459Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515105041,\n  exp: 1515141041,\n  at_hash: 'ZhOfKCDDtTRY_w5PU3dM7A',\n  nonce: 'xQG9dJdtrC7xgfT0_D5prd.kD~hx0uxv' }"
+    },
+    {
+      "2018-01-04T22:41:45.253Z": "5 null"
+    },
+    {
+      "2018-01-04T22:41:45.253Z": "6 'nwambachristian@gmail.com'"
+    },
+    {
+      "2018-01-04T22:41:45.281Z": "7 { id: 'cjc12tg65lt0j012114njhmic' }"
+    },
+    {
+      "2018-01-04T22:41:45.356Z": "8 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDY3NDYsImlhdCI6MTUxNTEwNTcwNSwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.cAfBijxlLSlRdmV4_RXVmiJmyrMtbSmQ6DiLKwd6qSM'"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "id": "cjc12tg65lt0j012114njhmic",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDY3NDYsImlhdCI6MTUxNTEwNTcwNSwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.cAfBijxlLSlRdmV4_RXVmiJmyrMtbSmQ6DiLKwd6qSM"
+    }
+  }
+}
+2018-01-04T22:45:36.227Z 946ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6NDU6MzIuMzQ3WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTkzMiwiZXhwIjoxNTE1MTQxOTMyLCJhdF9oYXNoIjoiSzlmNTQ1U0tMTE5zWUx2MU52S0FCdyIsIm5vbmNlIjoiOVJybWczQUhBanhlMjdZeHpaVXMwYTlsY0pxOF9VMFoifQ.Nq_2C69ajqdUhTHjXHU130UNA6E23JLef0hNtD0QuyXFtUiwDS5KE-cK0Z99aiioTZ44ZPPaoj6mnMhIayLjXwxMI3TEw8AEuGo4_1HjyKjspaVNF4IJriFrV9HE6ML763gh7huklt6iiZuWt4EpH4KtZqp9Mr24lfj_8M9ZNrqINo-ql7X9z0hLHljBZlXo4cz-QzThKK-joS3Q2KyWtftvrZR_OxC-8p_GjlsStAHN5gbNXHQt9Jq_TQrD8yUhpmsAk8UM_LD2DABBvkW1XNXIolMoTzD0MRtJIQ9jiTm_6uNJ9DR0AZFOgM4FUI03Q_P-0RyLZJpLXJ9XFT1dLg"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDYyMzYsImlhdCI6MTUxNTEwNTkzNiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJ5ZWViNjhjbjAxNTNrbGkyOWl2aCJ9.iJF3wub_zHHLTar8Y5IcLGOMRXu6q69ol06sVzkqIUA",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDYyMzYsImlhdCI6MTUxNTEwNTkzNiwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTJ5ZWViNjhjbjAxNTNrbGkyOWl2aCJ9.iJF3wub_zHHLTar8Y5IcLGOMRXu6q69ol06sVzkqIUA",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:45:36.360Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:45:36.360Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6NDU6MzIuMzQ3WiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNTkzMiwiZXhwIjoxNTE1MTQxOTMyLCJhdF9oYXNoIjoiSzlmNTQ1U0tMTE5zWUx2MU52S0FCdyIsIm5vbmNlIjoiOVJybWczQUhBanhlMjdZeHpaVXMwYTlsY0pxOF9VMFoifQ.Nq_2C69ajqdUhTHjXHU130UNA6E23JLef0hNtD0QuyXFtUiwDS5KE-cK0Z99aiioTZ44ZPPaoj6mnMhIayLjXwxMI3TEw8AEuGo4_1HjyKjspaVNF4IJriFrV9HE6ML763gh7huklt6iiZuWt4EpH4KtZqp9Mr24lfj_8M9ZNrqINo-ql7X9z0hLHljBZlXo4cz-QzThKK-joS3Q2KyWtftvrZR_OxC-8p_GjlsStAHN5gbNXHQt9Jq_TQrD8yUhpmsAk8UM_LD2DABBvkW1XNXIolMoTzD0MRtJIQ9jiTm_6uNJ9DR0AZFOgM4FUI03Q_P-0RyLZJpLXJ9XFT1dLg'"
+    },
+    {
+      "2018-01-04T22:45:37.001Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:45:32.347Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515105932,\n  exp: 1515141932,\n  at_hash: 'K9f545SKLLNsYLv1NvKABw',\n  nonce: '9Rrmg3AHAjxe27YxzZUs0a9lcJq8_U0Z' }"
+    },
+    {
+      "2018-01-04T22:45:37.073Z": "5 { id: 'cjc12tg65lt0j012114njhmic' }"
+    },
+    {
+      "2018-01-04T22:45:37.189Z": "8 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDc4NjksImlhdCI6MTUxNTEwNTkzNywicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.RXS_IIslipBbhP6Gfd463KCzPCWBgQJGXoGDgbl1MzI'"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "id": "cjc12tg65lt0j012114njhmic",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDc4NjksImlhdCI6MTUxNTEwNTkzNywicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.RXS_IIslipBbhP6Gfd463KCzPCWBgQJGXoGDgbl1MzI"
+    }
+  }
+}
+2018-01-04T22:48:28.000Z 767ms SUCCESS {
+  "event": {
+    "data": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6NDg6MTkuNzYwWiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNjA5OSwiZXhwIjoxNTE1MTQyMDk5LCJhdF9oYXNoIjoiNk9YNE1Mem4ycVlwSGtBcjVUeXh0QSIsIm5vbmNlIjoiTnFmS0lDLVlLM3NFOXFJYVIxSF9-akJZczVxMWU4U3kifQ.LDvBc4s10zgnENS8NsHFczZK30eZXW-IKaxjlFQ5Kuf18x0W3JENIv42f2-Tq3q9XI26uUANPUBS6qQhEhp2d6Q2VMptPFXN95hX4IoZDalxWQ36on9jZX0g_cz2mcTEtzunN6YL4lPBKfLfJuXxkqHjWeAtigOVmyUyzdlMy5P6kiPFIHFPFnLSVX8L1pYUKKoVQShgZy78NcNvoe4dU7AZkyBV49YU7dHdPGmwyF6mNhkQjiROr_AL41cmtZRWE_U5uYYm3-uA3M7wpyEC73sigqZTDvuqKBorquhC1jMs0VBcOLR-bn-kQs1jv7sVLuxpUvFaQhmIEwdzf3uHTA"
+    },
+    "context": {
+      "request": {
+        "sourceIp": "41.190.31.246",
+        "headers": {},
+        "httpMethod": "post"
+      },
+      "auth": null,
+      "sessionCache": {},
+      "environment": {},
+      "graphcool": {
+        "rootToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDY0MDgsImlhdCI6MTUxNTEwNjEwOCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTMyMnhzaXRyYTAxNzNvcmlubHI1bSJ9.xajoXqGSZ9q4B9EDLc38Tdc4255deMyKtNDD26Yyc-M",
+        "endpoints": {
+          "simple": "https://api.graph.cool/simple/v1/cjbybqj371erj0126784988vd",
+          "relay": "https://api.graph.cool/relay/v1/cjbybqj371erj0126784988vd",
+          "system": "https://api.graph.cool/system",
+          "subscriptions": "wss://subscriptions.graph.cool/v1/cjbybqj371erj0126784988vd"
+        },
+        "projectId": "cjbybqj371erj0126784988vd",
+        "alias": null,
+        "pat": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTUxMDY0MDgsImlhdCI6MTUxNTEwNjEwOCwiY2xpZW50SWQiOiJfIiwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInBlcm1hbmVudEF1dGhUb2tlbklkIjoiY2pjMTMyMnhzaXRyYTAxNzNvcmlubHI1bSJ9.xajoXqGSZ9q4B9EDLc38Tdc4255deMyKtNDD26Yyc-M",
+        "serviceId": "cjbybqj371erj0126784988vd"
+      }
+    }
+  },
+  "logs": [
+    {
+      "2018-01-04T22:48:28.100Z": "1 'Starting...'"
+    },
+    {
+      "2018-01-04T22:48:28.101Z": "3 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik16QkJOemM1UXprMlJEY3dSREJET1Rnek5ERkNOVFJHT0VZMVJFSkJNVVF4UVRZM1JEWTFSZyJ9.eyJuaWNrbmFtZSI6Im53YW1iYWNocmlzdGlhbiIsIm5hbWUiOiJud2FtYmFjaHJpc3RpYW5AZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2ZmZWVjZTY0OTI1NmYwOWY4ZDUyZWJjMTdhOGNjNWUzP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGbncucG5nIiwidXBkYXRlZF9hdCI6IjIwMTgtMDEtMDRUMjI6NDg6MTkuNzYwWiIsImVtYWlsIjoibndhbWJhY2hyaXN0aWFuQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9jaHJpczkyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NzU5MGVlNDJlZDBjNmU2MWI3NzAyMTkiLCJhdWQiOiI1TlNBWllLaVpZUlJyUHZUMFQwdjZQZGp5eE0zcmhYRiIsImlhdCI6MTUxNTEwNjA5OSwiZXhwIjoxNTE1MTQyMDk5LCJhdF9oYXNoIjoiNk9YNE1Mem4ycVlwSGtBcjVUeXh0QSIsIm5vbmNlIjoiTnFmS0lDLVlLM3NFOXFJYVIxSF9-akJZczVxMWU4U3kifQ.LDvBc4s10zgnENS8NsHFczZK30eZXW-IKaxjlFQ5Kuf18x0W3JENIv42f2-Tq3q9XI26uUANPUBS6qQhEhp2d6Q2VMptPFXN95hX4IoZDalxWQ36on9jZX0g_cz2mcTEtzunN6YL4lPBKfLfJuXxkqHjWeAtigOVmyUyzdlMy5P6kiPFIHFPFnLSVX8L1pYUKKoVQShgZy78NcNvoe4dU7AZkyBV49YU7dHdPGmwyF6mNhkQjiROr_AL41cmtZRWE_U5uYYm3-uA3M7wpyEC73sigqZTDvuqKBorquhC1jMs0VBcOLR-bn-kQs1jv7sVLuxpUvFaQhmIEwdzf3uHTA'"
+    },
+    {
+      "2018-01-04T22:48:28.708Z": "4 { nickname: 'nwambachristian',\n  name: 'nwambachristian@gmail.com',\n  picture: 'https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fnw.png',\n  updated_at: '2018-01-04T22:48:19.760Z',\n  email: 'nwambachristian@gmail.com',\n  email_verified: false,\n  iss: 'https://chris92.auth0.com/',\n  sub: 'auth0|57590ee42ed0c6e61b770219',\n  aud: '5NSAZYKiZYRRrPvT0T0v6PdjyxM3rhXF',\n  iat: 1515106099,\n  exp: 1515142099,\n  at_hash: '6OX4MLzn2qYpHkAr5TyxtA',\n  nonce: 'NqfKIC-YK3sE9qIaR1H_~jBYs5q1e8Sy' }"
+    },
+    {
+      "2018-01-04T22:48:28.738Z": "5 { id: 'cjc12tg65lt0j012114njhmic' }"
+    },
+    {
+      "2018-01-04T22:48:28.782Z": "8 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDgyMDcsImlhdCI6MTUxNTEwNjEwOCwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.2fK_9SJHdylwg-_2lxRvvRt21DhwrtOTx9ZW52aq6Bc'"
+    }
+  ],
+  "returnValue": {
+    "data": {
+      "id": "cjc12tg65lt0j012114njhmic",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMwMzAyNDgyMDcsImlhdCI6MTUxNTEwNjEwOCwicHJvamVjdElkIjoiY2pieWJxajM3MWVyajAxMjY3ODQ5ODh2ZCIsInVzZXJJZCI6ImNqYzEydGc2NWx0MGowMTIxMTRuamhtaWMiLCJtb2RlbE5hbWUiOiJVc2VyIn0.2fK_9SJHdylwg-_2lxRvvRt21DhwrtOTx9ZW52aq6Bc"
+    }
+  }
+}
