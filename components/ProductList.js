@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
-import Product from './Product'
+import { ProductComponent } from './Product'
 import Row from './Row'
 
 export const ProductList = props => {
@@ -22,7 +22,7 @@ export const ProductList = props => {
   return (
     <Row>
       {productsToRender.map(product => 
-        <Product product={product} key={product.id} />
+        <ProductComponent product={product} key={product.id} />
       )}
     </Row>
   );
